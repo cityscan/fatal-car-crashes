@@ -1,0 +1,58 @@
+C3 ,Number of Forms Submitted for Persons  Not in Motor Vehicles ,PEDS ,30
+C3A ,Number of Persons Not in Motor Vehicles in Transport (MVIT) ,PERNOTMVIT ,30
+C4 ,Number of Vehicle Forms Submitted- ALL ,VE_TOTAL ,31
+C4A ,Number of Motor Vehicles in Transport (MVIT) ,VE_FORMS ,32
+C4B ,Number of Parked/Working Vehicles Involved ,PVH_INVL ,33
+C5 ,Number of Forms Submitted for Persons in Motor Vehicles ,PERSONS ,34
+C5A ,Number of Persons in Motor Vehicles in Transport (MVIT) ,PERMVIT ,35
+C6 ,County ,COUNTY ,36
+C7 ,City ,CITY ,37
+C8A ,Month of Crash ,MONTH ,38
+C8B ,Day of Crash ,DAY ,38
+C8C ,Day of Week ,DAY_WEEK ,39
+C8D ,Year of Crash ,YEAR ,39
+C9A ,Hour of Crash ,HOUR ,40
+C9B ,Minute of Crash ,MINUTE ,40
+C10 ,National Highway System ,NHS ,41
+C11 ,Roadway Function Class ,ROAD_FNC ,42
+C12 ,Route Signing ,ROUTE ,43
+C13 ,Trafficway Identifier ,TWAY_ID ,44
+C13 ,Trafficway Identifier ,TWAY_ID2 ,44
+C14 ,Milepoint ,MILEPT ,45
+C16 ,Special Jurisdiction ,SP_JUR ,46
+C18 ,First Harmful Event ,HARM_EV ,47
+C19 ,Manner of Collision ,MAN_COLL ,51
+C20A ,Relation to Junction- Within Interchange Area ,RELJCT1 ,52
+C20B ,Relation to Junction- Specific Location ,RELJCT2 ,52
+C21 ,Type of Intersection ,TYP_INT ,54
+C22 ,Relation to Trafficway ,REL_ROAD ,55
+C23 ,Work Zone ,WRK_ZONE ,56
+C24 ,Light Condition ,LGT_COND ,57
+C25 ,Atmospheric Conditions ,WEATHER ,58
+C25 ,Atmospheric Conditions ,WEATHER1 ,58
+C25 ,Atmospheric Conditions ,WEATHER2 ,58
+C26 ,School Bus Related ,SCH_BUS ,59
+C27 ,Rail Grade Crossing Identifier ,RAIL ,60
+C28A ,Hour of Notification ,NOT_HOUR ,61
+C28B ,Minute of Notification ,NOT_MIN ,61
+C29A ,Hour of Arrival at Scene ,ARR_HOUR ,62
+C29B ,Minute of Arrival at Scene ,ARR_MIN ,62
+C30A ,Hour of EMS Arrival at Hospital ,HOSP_HR ,63
+C30B ,Minute of EMS Arrival at Hospital ,HOSP_MIN ,63
+C31 ,Related Factors- Crash Level ,CF1 ,64
+C31 ,Related Factors- Crash Level ,CF2 ,64
+C31 ,Related Factors- Crash Level ,CF3 ,64
+C100 ,Drunk Driver ,DRUNK_DR ,66
+C101 ,Fatalities ,FATALS ,67
+,Vehicles in Transport (discontinued) ,VEHICLES ,68
+,Federal Highway (discontinued) ,FED_AID ,69
+,Land Use (discontinued) ,LAND_USE ,70
+,Trafficway Description (discontinued) ,TRAF_FLO ,71
+,Total Lanes in Roadway (discontinued) ,NO_LANES ,72
+,Speed Limit (discontinued) ,SP_LIMIT ,73
+,Roadway Alignment (discontinued) ,ALIGNMNT ,74
+,Roadway Profile (discontinued) ,PROFILE ,75
+,Roadway Surface Type (discontinued) ,PAVE_TYP ,76
+,Roadway Surface Condition (discontinued) ,SUR_COND ,77
+,Traffic Control Device (discontinued) ,TRA_CONT ,78
+,Traffic Control Device Functioning (discontinued) ,T_CONT_F ,80

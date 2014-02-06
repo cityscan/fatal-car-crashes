@@ -1,0 +1,5 @@
+C17,Vehicle Number (This Vehicle),VNUMBER1,275
+C17,Area of Impact (This Vehicle),AOI1,283
+V31,Sequence of Events,SOE,284
+C17,Vehicle Number (Other Vehicle),VNUMBER2,286
+C17,Area of Impact (Other Vehicle),AOI2,287

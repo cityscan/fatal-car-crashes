@@ -1,0 +1,46 @@
+P5/NM5 ,Age ,AGE ,230
+P6/NM6 ,Sex ,SEX ,231
+P7/NM7 ,Person Type ,PER_TYP ,232
+P8/NM8 ,Injury Severity ,INJ_SEV ,233
+P9 ,Seating Position ,SEAT_POS ,234
+P10 ,Restraint System/Helmet Use ,REST_USE ,236
+P11 ,Indication of Misuse of Restraint System/Helmet ,REST_MIS ,238
+P12 ,Air Bag Deployed ,AIR_BAG ,239
+P13 ,Ejection ,EJECTION ,241
+P14 ,Ejection Path ,EJ_PATH ,242
+P15 ,Extrication ,EXTRICAT ,243
+P16/NM15 ,Police Reported Alcohol Involvement ,DRINKING ,244
+P17/NM16 ,Method of Alcohol Determination by Police ,ALC_DET ,245
+P18A/NM17A ,Alcohol Test Status ,ALC_STATUS ,246
+P18A/NM17A ,Alcohol Test Status ,ATST_TYP ,247
+P18A/NM17A ,Alcohol Test Status ,ALC_RES ,248
+P19/NM18 ,Police Reported Drug Involvement ,DRUGS ,249
+P20/NM19 ,Method of Drug Determination by Police ,DRUG_DET ,250
+P21A/NM20A ,Drug Test Status ,DSTATUS ,251
+P21B/NM20B ,Drug Test Type ,DRUGTST1 ,251
+P21B/NM20B ,Drug Test Type ,DRUGTST2 ,251
+P21B/NM20B ,Drug Test Type ,DRUGTST3 ,251
+P21B/NM20B ,Drug Test Type ,DRUGRES1 ,252
+P21B/NM20B ,Drug Test Type ,DRUGRES2 ,252
+P21B/NM20B ,Drug Test Type ,DRUGRES3 ,252
+P22/NM21 ,Transported to Medical Facility By ,HOSPITAL ,253
+P23/NM22 ,Died at Scene/En Route ,DOA ,254
+P24A/NM23A ,Month of Death ,DEATH_MO ,255
+P24B/NM23B ,Day of Death ,DEATH_DA ,255
+P24C/NM23C ,Year of Death ,DEATH_YR ,256
+P25/NM24 ,Death Time ,DEATH_TM ,257
+P25A/NM24A ,Hour of Death ,DEATH_HR ,257
+P25B/NM24B ,Minute of Death ,DEATH_MN ,258
+P26/NM25 ,Related Factors- Person Level ,P_SF1 ,259
+P26/NM25 ,Related Factors- Person Level ,P_SF2 ,259
+P26/NM25 ,Related Factors- Person Level ,P_SF3 ,259
+P100A ,Lag Hours ,LAG_HRS ,264
+P100B ,Lag Minutes ,LAG_MINS ,264
+SP1 ,Death Certificate Number ,CERT_NO ,265
+SP2 ,Fatal Injury at Work ,WORK_INJ ,266
+SP3A ,Race ,RACE ,267
+SP3B ,Hispanic Origin ,HISPANIC ,268
+NM4 ,Number of Motor Vehicle Striking Non-Motorist ,STR_VEH ,269
+NM10 ,Non-Motorist Location at Time of Crash ,LOCATION ,270
+,Automatic Restraint (discontinued) ,AUT_REST ,272
+,Manual Restraint (discontinued) ,MAN_REST ,273

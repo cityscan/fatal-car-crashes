@@ -1,0 +1,77 @@
+C4A ,Number of Vehicles Involved ,PVE_FORMS ,315
+C8A ,Month of Crash ,PMONTH ,316
+C8B ,Day of Crash ,PDAY ,316
+C9A ,Hour of Crash ,PHOUR ,317
+C9B ,Minute of Crash ,PMINUTE ,317
+C19 ,Manner of Collision ,PMAN_COLL ,320
+V4 ,Number of Occupants ,PNUMOCCS ,321
+V5 ,Unit Type ,PTYPE ,322
+V6 ,Hit and Run ,PHIT_RUN ,323
+V8 ,Registered Vehicle Owner ,POWNER ,324
+V9 ,Vehicle Make ,PMAKE ,325
+V10 ,Vehicle Model ,PMODEL ,329
+V11 ,Body Type ,PBODYTYP ,330
+V12 ,Vehicle Model Year ,PMODYEAR ,333
+V13 ,Vehicle Identification Number (VIN) ,PVIN ,334
+V14 ,Vehicle Trailing ,PTRAILER ,335
+V16 ,Motor Carrier Identification Number ,PMCARR_ID ,336
+V16A ,MCID Issuing Authority ,PMCARR_I1 ,337
+V16B ,MCID Identification Number ,PMCARR_I2 ,338
+V17 ,Gross Vehicle Weight Rating/GCWR ,PGVWR ,339
+V18 ,Vehicle Configuration ,PV_CONFIG ,340
+V19 ,Cargo Body Type ,PCARGTYP ,341
+V20A/HM1 ,Hazardous Material Involvement ,PHAZ_INV ,342
+V20B/HM2 ,Hazardous Material Placard ,PHAZPLAC ,342
+V20C/HM3 ,Hazardous Material Identification Number ,PHAZ_ID ,342
+V20D/HM4 ,Hazardous Material Class Number ,PHAZ_CNO ,343
+V20E/HM5 ,Release of Hazardous Material from the from the Cargo Compartment ,PHAZ_REL ,343
+V21 ,Bus Use ,PBUS_USE ,344
+V22 ,Special Use ,PSP_USE ,345
+V23 ,Emergency Use ,PEM_USE ,346
+V25 ,Underride/Override ,PUNDERIDE ,347
+V28A ,Initial Damage Area ,PIMPACT1 ,348
+V29 ,Extent of Damage ,PVEH_SEV ,349
+V30 ,Vehicle Removal ,PTOWED ,350
+V32 ,Most Harmful Event ,PM_HARM ,351
+V33 ,Related Factors – Vehicle Level ,PVEH_SC1 ,354
+V33 ,Related Factors – Vehicle Level ,PVEH_SC2 ,354
+V34 ,Fire Occurrence ,PFIRE ,356
+V100 ,Make Model Combined ,PMAK_MOD ,357
+V101 ,VIN Character 1 ,PVIN_1 ,358
+V102 ,VIN Character 2 ,PVIN_2 ,359
+V103 ,VIN Character 3 ,PVIN_3 ,360
+V104 ,VIN Character 4 ,PVIN_4 ,361
+V105 ,VIN Character 5 ,PVIN_5 ,362
+V106 ,VIN Character 6 ,PVIN_6 ,363
+V107 ,VIN Character 7 ,PVIN_7 ,364
+V108 ,VIN Character 8 ,PVIN_8 ,365
+V109 ,VIN Character 9 ,PVIN_9 ,366
+V110 ,VIN Character 10 ,PVIN_10 ,367
+V111 ,VIN Character 11 ,PVIN_11 ,368
+V112 ,VIN Character 12 ,PVIN_12 ,369
+V113 ,VIN Vehicle Type ,PVINTYPE ,370
+V114 ,VIN Make ,PVINMAKE ,371
+V115 ,VIN Model ,PVINA_MOD ,372
+V116 ,VIN Body Type ,PVIN_BT ,373
+V117 ,VIN Model Year ,PVINMODYR ,377
+V118 ,Curb Weight ,PVIN_WGT ,378
+V119 ,Wheelbase Short ,PWHLBS_SH ,379
+V120 ,Wheelbase Long ,PWHLBS_LG ,380
+V121 ,Fuel Code ,PFUECODE ,381
+V122 ,VIN Truck Series ,PSER_TR ,382
+V123 ,Truck Weight Rating ,PWGTCD_TR ,383
+V124 ,Motorcycle Engine Displacement (CC) ,PMCYCL_DS ,384
+V125 ,VIN Length ,PVIN_LNGT ,385
+V126 ,Original Tire Size ,PTIRE_SZE ,386
+V127 ,Cubic Inch Displacement ,PDISPLACE ,387
+V128 ,Number of Cylinders ,PCYLINDER ,388
+V129 ,Carburetion ,PCARBUR ,389
+V130 ,Number of Wheels/Drive Wheels ,PWHLDRWHL ,390
+V131 ,Truck Ton Rating ,PTON_RAT ,391
+V132 ,Truck Shipping Weight ,PTRK_WT ,392
+V133 ,Truck Shipping Weight Variance ,PTRKWTVAR ,393
+V134 ,Truck VIN Restraint Type ,PVIN_REST ,394
+V135 ,Motorcycle Dry Weight ,PMCYCL_WT ,395
+V136 ,Number of Motorcycle Engine Cycles ,PMCYCL_CY ,396
+V150 ,Fatalities in Vehicle (Number) ,PDEATHS ,397
+V28B ,Most Damaged Area ,PIMPACT2 ,398
