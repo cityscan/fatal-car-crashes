@@ -725,4 +725,215 @@ CF1 = {
         '99': 'Unknown'
         }
 
+####
+# Trafficway Description (discontinued in 2010)
+# attribute that best describnes trafficway flow just prior to vehicle's critical precrash event
+# in 2010, no longer collected at Accident level - now at Vehicle Level and 
+# appears in Vehicle data file as VTRAFWAY
+# 1975-1981
+ROAD_FLO = {
+        '1': 'Divided Highway, Median Strip (Since 1977)',
+        '2': 'Divided Highway, Guardrail (Since 1977)',
+        '3': 'Divided Highway, Other Barrier or Barrier Type Unknown',
+        '4': 'Not Physically Divided',
+        '5': 'One Way Traffic',
+        '9': 'Unknown'
+        }
 
+# 1982-1986
+TWAY_FLO = {
+        '1': 'Not Physically Divided (Two-Way Trafficway)',
+        '2': 'Divided Highway, Median Strip (Without Traffic Barrier)',
+        '3': 'Divided Highway, Median Strip (With Traffic Barrier)',
+        '4': 'One-Way Trafficway',
+        '9': 'Unknown'
+        }
+
+# 1987-2002
+TRAF_FLOW = TWAY_FLO.copy()
+TRAF_FLOW['5'] = 'Divided Highway, Median Strip (With Two-Way Continuous Left-Turn Lane, Since 2001)'
+
+# 2003-2009
+TRAF_FLOW['5'] = 'Not Physically Divided (With Two-Way Continuous Left-Turn Lane)'
+TRAF_FLOW['6'] = 'Entrance/Exit Ramp'
+
+####
+# Total Lanes in Roadway (discontinued in 2010)
+# Number of travel lanes just prior to vehicle's critical precrash event
+# refers to number of lanes of continuous cross-section of roadway
+# now collected in Vehicle files as VNUM_LAN
+# 1975-1979
+NO_LANES = {
+        '1': 'One Lane',
+        '2': 'Two Lanes',
+        '3': 'Three Lanes',
+        '4': 'Four Lanes',
+        '5': 'Five Lanes',
+        '6': 'Six or More Lanes',
+        '9': 'Unknown'
+        }
+
+# 1980-2009
+NO_LANES['7'] = 'Seven or More Lanes'
+
+####
+# Speed Limit (discontinued in 2010)
+# Now in Vehicle file as VSPD_LIM
+# 1975-1976
+# 01-94: The posted speed limit
+SP_LIMIT = { 
+        '95': 'Speed Limit is 95 mpg or Greater',
+        '96': 'No Statutory Limit',
+        '98': 'Not Reportable',
+        '99': 'Unknown'
+        }
+
+# 1977-78
+SP_LIMIT['98'].pop()
+
+# 1979
+# 01-98 is speed limit
+SP_LIMIT['95'].pop()
+SP_LIMIT['96'].pop()
+SP_LIMIT['98'].pop()
+
+# 1980-2009
+SP_LIMIT['00'] = 'No Statutory Limit'
+
+####
+# Roadway Alignment (discontinued in 2010)
+# Now in Vehicle file as VALIGN
+ALIGNMNT = {
+        '1': 'Straight',
+        '2': 'Curved',
+        '9': 'Unknown'
+        }
+
+####
+# Roadway Profile (discontinued in 2010)
+# Now in Vehicle file as VPROFILE
+# 1975-1981
+PROFILE = {
+        '1': 'Level',
+        '2': 'Grade',
+        '9': 'Unknown'
+        }
+
+# 1982-2009
+PROFILE['3'] = 'Hillcrest'
+PROFILE['4'] = 'Sag'
+
+####
+# Roadway Surface Type (discontinued in 2010)
+# Now in Vehicle file as VPAVETYP
+PAVE_TYP = {
+        '1': 'Concrete',
+        '2': 'Blacktop, Bituminous, or Asphalt',
+        '3': 'Brick or Block',
+        '4': 'Slag, Gravel, or Stone',
+        '5': 'Dirt',
+        '8': 'Other',
+        '9': 'Unknown'
+        }
+
+####
+# Roadway Surface Condition (discontinued in 2010)
+# Now in Vehicle file as VSURCOND
+# 1975-2006
+SUR_COND = {
+        '1': 'Dry',
+        '2': 'Wet',
+        '3': 'Snow or Slush',
+        '4': 'Ice',
+        '5': 'Sand, Dirt, Oil',
+        '8': 'Other',
+        '9': 'Unknown'
+        }
+
+# 2007-2009
+SUR_COND['4'] = 'Ice/Frost'
+SUR_COND['5'] = 'Sand, Dirt, Mud, Gravel'
+SUR_COND['6'] = 'Water (Standing or Moving)'
+SUR_COND['7'] = 'Oil'
+
+####
+# Traffic Control Device (discontinued in 2010)
+# Now in Vehicle file as VTRAFCON
+#1975-1981
+TRA_CONT = {
+        '00': 'No Controls',
+        '01': 'Flashing Traffic Signals',
+        '02': 'On Colors Traffic Signal',
+        '03': 'Stop Sign',
+        '04': 'Yield Sign',
+        '05': 'Physically Controlled Railroad Crossing',
+        '06': 'Stop Sign for Railroad Crossing',
+        '07': 'Other Railroad Crossing',
+        '08': 'School Zone Sign',
+        '09': 'Traffic Control Not Functioning',
+        '10': 'Pedestrian Signal (Since 1978)',
+        '98': 'Other',
+        '99': 'Unknown'
+        }
+#1982-2009
+# 01-09: HIGHWAY TRAFFIC SIGNALS
+# 20-29: REGULATORY SIGNS
+# 30-39: SCHOOL ZONE SIGNS
+# 40-41: WARNING SIGN
+# 50: MISCELLANEOUS NOT AT RAILROAD CROSSING
+# 60-60: AT RAILROAD GRADE CROSSINGS - ACTIVE DEVICES
+# 70-79: AT RAILROAD GRADE CROSSINGS - PASSIVE DEVICES
+# 80: MISCELLANEOUS DEVICES AT RAILROAD CROSSING
+# 98-99: WHETHER OR NOT AT RAILROAD GRADE CROSSING
+TRA_CONT = {
+        '00': 'No Controls',
+        '01': 'Traffic Control Signal (On Colors) Without a Pedestrian Signal',
+        '02': 'Traffic Control (On Colors) With Pedestrian Signal',
+        '03': 'Traffic Control Signal (On Colors) Not Known if Pedestrian Signal',
+        '04': 'Flashing Traffic Control Signal',
+        '05': 'Flashing Beacon',
+        '06': 'Flashing Highway Traffic Signal, Type Unknown, or Other',
+        '07': 'Lane Use Control Signal',
+        '08': 'Other Highway Traffic Signal',
+        '09': 'Unknown Highway Traffic Signal',
+        '20': 'Stop Sign',
+        '21': 'Yield Sign',
+        '28': 'Other Regulatory Sign',
+        '29': 'Unknown Type Regulatory Sign',
+        '30': 'School Speed Limit Sign',
+        '31': 'School Advance or Crossing Sign',
+        '38': 'Other School-Related Sign',
+        '39': 'Unknown Type School Zone Sign',
+        '40': 'Warning Sign',
+        '41': 'Electronic Warning Sign (Since 2002)',
+        '50': 'Officer, Crossing Guard, Flagman, etc.',
+        '60': 'Gates',
+        '61': 'Flashing Lights',
+        '62': 'Traffic Control Signal',
+        '63': 'Wigwags',
+        '64': 'Bells',
+        '68': 'Other Train-Activated Device',
+        '69': 'Active Device, Type Unknown',
+        '70': 'Cross Bucks',
+        '71': 'Stop Sign',
+        '72': 'Other Railroad Crossing Sign',
+        '73': 'Special Warning Device Watchman, Flagged By Crew',
+        '78': 'Other Passive Device',
+        '79': 'Passive Device, Type Unknown',
+        '80': 'Grade Crossing Controlled, Type Unknown',
+        '98': 'Other',
+        '99': 'Unknown'
+        }
+
+####
+# Traffic Control Device Functioning (discontinued in 2010)
+# Data not collected prior to 1982
+# Now in Vehicle file as VTCONT_F
+# 1982-2009
+T_CONT_F = {
+        '0': 'No Controls',
+        '1': 'Device Not Functioning',
+        '2': 'Device Functioning - Functioning Improperly',
+        '3': 'Device Functioning Properly',
+        '9': 'Unknown'
+        }
