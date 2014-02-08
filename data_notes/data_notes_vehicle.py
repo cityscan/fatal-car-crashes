@@ -412,3 +412,122 @@ BODY_TYP['98'] = 'Not Reported'
 # 1991-93
 BODY_TYP['08'] = 'Other Auto'
 BODY_TYP['09'] = 'Unknown Auto Type'
+
+####
+# Vehicle Model Year
+# 00-98 - Actual model Year
+# 9998 - Not Reported
+# 9999 - Unknown
+
+####
+# Vehicle Identification Number (VIN)
+# 1975-1993: first 10 numbers
+# 1994 -later: first 12 numbers
+VIN = {
+        '000000000000': 'No VIN Required',
+        '888888888888': 'Not Reported',
+        '999999999999': 'Unknown'
+        }
+
+####
+# Vehicle Trailing
+# applies to tractor trailers, boats, cars, and U-Haul-type vehicles that are towed with hitch
+# 1975-81
+TOW_VEH = {
+        '0': 'No Trailing Unit',
+        '1': 'Yes'
+        }
+
+# 1982
+TOW_VEH['1'] = 'Yes, One Trailing Unit'
+TOW_VEH['4'] = 'Yes, Number of Trailing Units Unknown'
+TOW_VEH['5'] = 'Yes, Two or More Trailing Units'
+
+# 1983-2003
+TOW_VEH['2'] = 'Yes, Two Trailing Units'
+TOW_VEH['3'] = 'Yes, Three or More Trailing Units'
+TOW_VEH['4'] = 'Yes, Number of Trailing Units Unknown'
+TOW_VEH['9'] = 'Unknown'
+
+# 2004-2008
+TOW_VEH['5'] = 'Vehicle Towing another Motor Vehicle'
+
+# 2009-later
+TOW_VEH['5'] = 'Vehicle Towing another Motor Vehicle - Fixed Linkage'
+TOW_VEH['6'] = 'Vehicle Towing another Motor Vehicle - Non-Fixed Linkage'
+
+####
+# Jackknife
+J_KNIFE = {
+        '0': 'Not an Articulated Vehicle',
+        '1': 'No',
+        '2': 'Yes',
+        '3': 'Yes, Subsequent Event'
+        }
+
+# if 1982-later
+J_KNIFE['2'] = 'Yes, First Event'
+
+####
+# Motor Carrier Identification Number (MCID)
+# found only on vehicles of interstate for-hire or private carriers inthe transportation business
+# collected only for buses and trucks over 4,500 kg GVWR (Bodytype (V5) = 60, 64, 66-79)
+# this data element is applicable to the following vehicles:
+# Medium/Heavy trucks: vehicles with two axles/six tires and/or gross weight greater than 10000 lbs
+# Buses with 16 or more seats (including the driver)
+# Trucks and vans of any size carrying hazardous cargo
+# light commercial trucks pulling a trailer with gross combination weight rating (GCWR) > 10000 lbs
+MCARR_ID = {
+        '000000000000': 'Not Applicable',
+        '777777777777': "Not Reported",
+        '888888888888': 'None',
+        '999999999999': 'Unknown'
+        }
+
+####
+# MCID Issuing Authority
+# 1998-2006
+# 01-56: FARS State Code
+MCARR_I1 = {
+        '00': 'Not Applicable',
+        '57': 'US DOT',
+        '58': 'ICC',
+        '88': 'None',
+        '95': 'Canada',
+        '96': 'Mexico',
+        '99': 'Unknown'
+        }
+
+# 2007-2009
+MCARR_I1['58'] = 'MC/MX (ICC)'
+
+# 2010-later
+MCARR_I1['58'] = 'MC/MX (ICC)'
+MCARR_I1['77'] = 'Not Reported'
+
+####
+# MCID Identification NUmber
+# MCARR_I2
+# same as MCID
+
+####
+# Gross Vehicle Weight Rating
+# value specified by manufacturer for single-unit truck, truck tractor, or trailer
+GVWR = {
+        '0': 'Not Applicable',
+        '1': '10,000 lbs or less',
+        '2': '10,001 - 26,000 lbs',
+        '3': '26,001 lbs or more',
+        '8': 'Not Reported',
+        '9': 'Unknown'
+        }
+
+####
+# Vehicle Configuration
+V_CONFIG = {
+        '0': 'Not Applicable, Not a Medium/Heavy Truck or Bus',
+        '00': 'Not Applicable',
+        '1': 'Single-Unit Truck (2 axles, 6 tires)',
+        '2': 'Single-Unit Truck (3 or More axles)',
+        '3': 'Truck/Trailers',
+        '4': 'Truck Tractor (Bobtail, i.e. Trac
