@@ -1369,5 +1369,167 @@ WGTCD_TR = {
 
 ####
 # Carburetion
+# number of barrels for the engine of this vehicle or a code indicating
+# that the engine is high-performance, fuel-injected, turbocharged, or
+# electronically-controlled
+# Also appears in Person and Parkwork as PCARBUR
+# 0-8 Actual Number of Barrels
+CARBUR = {
+        'A': '1 Barrel, Lower HP',
+        'B': '1 Barrel, Higher HP',
+        'C': '1 Barrel, Turbo',
+        'D': '1 Barrel, Turbo Low HP',
+        'E': '1 Barrel, Turbo High HP',
+        'F': 'Number of Barrels Not Specified, Fuel Injection',
+        'G': '1 Barrel, Electronically controlled',
+        'H': 'Number of Barrels Not Specified, High performance',
+        'J': '2 Barrels, Lower HP',
+        'K': '2 Barrels, Higher HP',
+        'L': '2 Barrels, Turbo',
+        'M': '2 Barrels, Turbo Low HP',
+        'N': '2 Barrels, Turbo High HP',
+        'P': '2 Barrels, Electronically controlled',
+        'Q': 'Number of Barrels Not Specified, Electronically controlled',
+        'R': '4 Barrels, Electronically controlled',
+        'S': '4 Barrels, Lower HP',
+        'T': '1, 2, or 4 Barrels, Turbo Fuel Injected',
+        'U': '4 Barrels, Higher HP',
+        'V': '4 Barrels, Turbo',
+        'W': '4 Barrels, Turbo Low HP',
+        'X': '4 Barrels, Turbo High HP',
+        'Y': 'Number of Barrels Not Specified, Turbo',
+        'Z': 'Number of Barrels Not Specified, Super Charged'
+        }
+
+####
+# Number of Wheels/Drive Wheels
+# 2 digits: 1st - number of axles, 2nd: number of drive axles * 2
+# WHLDRWHL
+
+####
+# Truck Ton Rating
+# Payload capacity of vehicle based on manufacturer's specifications
+# 2 characters: single code - capacity rating; two codes - range of capacity rating
+TON_RAT = {
+        'A': .25,
+        'B': .5,
+        'C': .75,
+        'D': 1.0,
+        'E': 1.5,
+        'F': 1.75,
+        'G': 2.0,
+        'H': 2.5,
+        'I': 3.0,
+        'J': 3.5,
+        'K': 4.0,
+        'L': 4.5,
+        'M': 5.0,
+        'N': 6.0,
+        'O': 7.0,
+        'P': 8.0,
+        'Q': 9.0,
+        'R': '10 and over'
+        }
+
+####
+# Truck Shipping Weight
+# Actual weight (lbs)
+# TRK_WT
+
+####
+# Truck Shipping Weight Variance
+# difference (coded in 100 lb increments) between shipping weight of shortest
+# wheel base and longest wheel base for this truck model (e.g. 200 lb 
+# difference appears as 02
+# TRKWTVAR
+
+####
+# Truck VIN Restraint Type
+# Also appears in Person and Parkwork as PVIN_REST
+VIN_REST = {
+        'A': 'Active (Manual) Belts',
+        'B': 'Driver Front Air Bags/Belt System Unknown',
+        'C': 'Dual Front Air Bags/Belt System Unknown',
+        'D': 'Dual Front Air Bag/Passenger Side Passive Belts',
+        'E': 'Dual Front Air Bags/Active Belts',
+        'F': 'Dual Front Air Bags/Passive Belts',
+        'G': 'Dual Air Bags Front and Side/Belts Unknown',
+        'H': 'Dual Air Bags Front, Head and Sides/Belts Unknown',
+        'I': 'Dual Air Bags Front, Head and Sides/Passive Belts',
+        'J': 'Dual Air Bags Front and Sides/Passive Belts',
+        'K': 'Dual Air Bags Front and Sides/Active Belts',
+        'L': 'Dual Air Bags Front, Head and Sides/Active Belt',
+        'M': 'Driver Front Air Bag/Passenger Side Active Belt',
+        'N': 'If Unable to Determine',
+        'P': 'Passive (Automatic) Belts',
+        'R': 'Dual Air Bags Front and Side/Active Belts w/ Automatic Passenger Sensor',
+        'S': 'Dual Air Bags Front, Head, and Side/Active Belts w/ Automatic Passenger Sensor',
+        'T': 'Dual Air Bags Front/Active Belts/Rear Passenger Side Air Bag',
+        'U': 'Dual Front Air Bags/Active Belts With Passenger Side Deactivation Cutoff Switch',
+        'V': 'Dual Air Bags Front, Head and Side/Active Belts/Rear Dual Side Air Bags',
+        'W': 'Dual Air Bags Front, Head and Side/Active Belts w/ Automatic Passenger Sensor/Rear Dual Side Airbags',
+        'X': 'Dual Air Bags Front/Side Air Bag, Driver-Side Only/Active Belts',
+        'Y': 'Dual Front and Side Air Bags With Passenger Deactivation; Active Belts',
+        '3': 'Dual Front and Head Airbags with Passenger Sensor; Active Belts',
+        '4': 'Dual Front Airbags With Passenger Sensor; Active Belts',
+        '7': 'Dual Front, Side and Head Airbags, Rear Head Airbags; Active Belts',
+        '9': 'Unknown'
+        }
+
+####
+# Motorcycle Dry Weight
+# 4 digit, weight in lbs
+# MCYCL_WT
+
+####
+# Number of motorcycle engines
+# Also appears in Person and Parkwork as PMCYCL_CY
+MCYCL_CY = {
+        '2': 'Two-stroke engine',
+        '4': 'Four-stroke engine',
+        'R': 'Rotary engine'
+        }
+
+####
+# Fatalities in Vehicle (Number)
+# Also appears in Parkwork as PDEATHS
+# DEATHS
+
+####
+# Driver Drinking
+# Alcohol data is often missing; this means acutal number of drinking drivers
+# is often under-counted
+DR_DRINK = {
+        '0': False,
+        '1': True,
+        '9': 'Unknown'
+        }
+
+####
+# Driver Presence
+# Whether a driver was present in this vehicle at the onset of the 
+# unstabilized situation
+# 1975-77
+DR_PRES = {
+        '1': 'Driver Operated Vehicle',
+        '2': 'No Driver',
+        '9': 'Unknown'
+        }
+
+# 1978-2008
+DR_PRES = {
+        '1': 'Driver Operated Vehicle',
+        '2': 'Driverless (No Driver)',
+        '3': 'Driver Left Scene',
+        '4': 'Motor Vehicle Not In-Transport (Parked/Stopped Off Roadway/Working Motor Vehicle/In Motion Outside Trafficway)',
+        '9': 'Unknown'
+        }
+
+# 2009-later
+DR_PRES = {
+        '0': 'No Driver Present/Not Applicable',
+        '1': True,
+        '9': 'Unknown'
+        }
 
 
