@@ -1532,4 +1532,175 @@ DR_PRES = {
         '9': 'Unknown'
         }
 
+####
+# Driver's Zip Code
+DR_ZIP = {
+        '00000': 'Not a Resident of U.S. or Territories',
+        '99997': 'No Driver Present/Unknown if Driver Present',
+        '99999': 'Unknown'
+        }
+
+####
+# Non-CDL License Type
+L_TYPE = {
+        '0': 'Not Licensed',
+        '1': 'Full Driver License',
+        '2': 'Intermediate Driver License',
+        '6': 'No Driver Present/Unknown if Driver Present',
+        '7': 'Learner\'s Permit',
+        '8': 'Temporary License'
+        '9': 'Unknown License Type'
+        }
+
+####
+# Non-CDL License Status
+# 1975-1981
+L_STATUS = {
+        '0': 'None Required',
+        '1': 'No License, License Required',
+        '2': 'Licensed, But Not for This Type Vehicle',
+        '3': 'Valid License for This Type Vehicle',
+        '4': 'Suspended License',
+        '5': 'Revoked License',
+        '6': 'Expired Permit',
+        '7': 'Learner\'s Permit',
+        '9': 'Unknown'
+        }
+
+# 1982-1986
+L_STATUS = {
+        '0': 'None Required',
+        '1': 'None',
+        '2': 'Valid',
+        '3': 'Suspended',
+        '4': 'Revoked',
+        '5': 'Expired',
+        '6': 'Cancelled or Denied',
+        '7': 'Learner\'s Permit',
+        '8': 'Temporary',
+        '9': 'Unknown'
+        }
+
+# 1987-1992
+L_STATUS = {
+        '0': 'Not Licensed',
+        '1': 'Suspended',
+        '2': 'Revoked',
+        '3': 'Expired',
+        '4': 'Cancelled or Denied',
+        '5': 'Single-Class License',
+        '6': 'Multiple-Class License',
+        '7': 'Learner\'s Permit',
+        '8': 'Temporary',
+        '9': 'Unknown'
+        }
+
+# 1993-2010
+L_STATUS['6'] = 'Valid License'
+L_STATUS['7'] = 'Learner\'s Permit/Restricted'
+L_STATUS['9'] = 'Unknown License Status'
+
+# 2011-later
+L_STATUS['7'] = 'No Driver Present/Unknown if Driver Present'
+
+####
+# Commercial Motor Vehicle License Status
+# 1991-1992
+CDL_STAT = {
+        '0': 'No Commercial Driver\'s License (CDL Not Required)',
+        '1': 'No CDL (CDL Required)',
+        '2': 'No CDL (Unknown if CDL Required)',
+        '3': 'CDL (CDL Not Required)',
+        '4': 'CDL (CDL Required)',
+        '5': 'CDL (Unknwon if CDL Requied)',
+        '6': 'Unknown CDL (CDL Not Required)',
+        '7': 'Unknown CDL (CDL Required)',
+        '9': 'Unknown CDL (Unknown if CDL Required)'
+        }
+
+# 1993-later
+CDL_STAT = {
+        '0': 'No Commercial Driver\'s License (CDL)',
+        '1': 'Suspended',
+        '2': 'Revoked',
+        '3': 'Expired',
+        '4': 'Cancelled or Denied',
+        '5': 'Disqualified',
+        '6': 'Valid',
+        '7': 'Learner\'s Permit',
+        '8': 'Other - Not Valid',
+        '9': 'Unknown CDL',
+        '97': 'No Driver Present/Unknown if Driver Present',
+        '98': 'Not Reported',
+        '99': 'Unknown License Status'
+        }
+
+####
+# Compliance with CDL Endorsements
+# Whether vehicle driven at time of crash required endorsements on CDL
+# and whether driver as complying with CDL endorsements
+L_ENDORS = {
+        '0': 'No Endorsements Required For This Vehicle',
+        '1': 'Endorsement(s) Required, Complied With',
+        '2': 'Endorsement(s) Required, Not Complied With',
+        '3': 'Endorsement(s) Required, Compliance Unknown',
+        '7': 'No Driver Present/Unknown if Driver Present',
+        '8': 'Not Reported',
+        '9': 'Unknown if Required'
+        }
+
+####
+# License compliance with Class of Vehicle
+# 1982-1986
+L_CL_VEH = {
+        '0': 'No License Required',
+        '1': 'No License, License Required',
+        '2': 'Valid License for This Class Vehicle Only',
+        '3': 'One Valid License, but Not for This Class Vehicle',
+        '4': 'Multiple Class Licenses, Valid License for This Class Vehicle',
+        '5': 'Multiple Class Licenses, Not Valid License for This Class Vehicle',
+        '9': 'Unknown'
+        }
+
+# 1987-later
+L_COMPL = {
+        '0': 'Not Licensed',
+        '1': 'No License Required for This Class Vehicle',
+        '2': 'No Valid License for This Class Vehicle',
+        '3': 'Valid License for This Class Vehicle',
+        '6': 'No Driver Present/Unknown if Driver Present',
+        '7': 'Not Reported',
+        '8': 'Unknown if CDL and/or CDL Endorsement Required for This Vehicle',
+        '9': 'Unknown'
+        }
+
+####
+# Compliance with License Restrictions
+L_RESTRI = {
+        '0': 'No Restrictions or Not Applicable',
+        '1': 'Restrictions Complied With',
+        '2': 'Restrictions Not Complied With',
+        '3': 'Restructions, Compliance Unknown',
+        '7': 'No Driver Present/Unknown if Driver Present',
+        '8': 'Not Reported',
+        '9': 'Unknown'
+        }
+
+####
+# Driver Height
+# in inches
+DR_HGT = {
+        '998': 'No Driver Present/Unknown if Driver Present',
+        '999': 'Unknown'
+        }
+
+####
+# Driver Weight
+# in pounds
+DR_WGT = {
+        '997': 'No Driver Present/Unknown if Driver Present',
+        '998': 'Other',
+        '999': 'Unknown'
+        }
+
 
