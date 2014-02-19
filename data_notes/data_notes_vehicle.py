@@ -1703,4 +1703,267 @@ DR_WGT = {
         '999': 'Unknown'
         }
 
+####
+# Previous Recorded Crashes
+# 01-97: actual values
+PREV_ACC = {
+        '00': 'None',
+        '98': 'CDL Disqualified',
+        '99': 'Unknown',
+        '998': 'No Driver Present/Unknown if Driver Present'
+        }
 
+# 1994-later
+PREV_ACC['98'] = 'Not Reported on Driving Record'
+
+####
+# Previous Recorded Suspensions and Revocations
+# 01-97 actual value
+PREV_SUS = {
+        '00': 'None',
+        '98': 'CDL Disqualified',
+        '99': 'Unknown',
+        '998': 'No Driver Present/Unknown if Driver Present'
+        }
+
+####
+# Previous DWI Convictions
+# 01-97: actual value
+PREV_DWI = {
+        '00': 'None',
+        '98': 'CDL Disqualified',
+        '99': 'Unknown',
+        '998': 'No Driver Present/Unknown if Driver Present'
+        }
+
+####
+# Previous Speeding Convictions
+# same as last 3 `previous`
+# PREV_SPD
+
+####
+# Previous Other Harmful Moving Violation Convictions
+# sames as last previous
+# PREV_OTH
+
+####
+# Date of First Crash, SUspension, or Conviction
+# for driver that occurred within 3 years of crash date
+# Month
+FIRST_MO = {
+        '00': 'No Record',
+        '98': 'No Driver Present/Unknown if Driver Present',
+        '99': 'Unknown'
+        }
+
+# Year
+# 1975-97: 2 digits
+FIRST_YR = {
+        '00': 'No Record',
+        '0000': 'No Record',
+        '99': 'Unknown',
+        '9999': 'Unknown'
+        }
+
+####
+# Date of Last Crash, Suspension, or Conviction
+# for driver that occurrec within 3 years of crash date
+LAST_MO = {
+        '00': 'No Record',
+        '98': 'No Driver Present/Unknown if Driver Present',
+        '99': 'Unknown'
+        }
+
+# Year
+# 1975-97: 2 digits
+# same as FIRST_YR
+# LAST_YR
+
+####
+# Speed Related
+# whether driver's speed was related to crash as indicated by
+# law enforcement
+SPEEDREL = {
+        '0': False,
+        '1': True,
+        '8': 'No Driver Present/Unknown if Driver Present',
+        '9': 'Unknown'
+        }
+
+####
+# Related Factors- Driver Level
+# 1975-1996: DR_CF1[2,3]
+# 1997-2009: DR_CF1[2,3,4]
+# 2010-later: DR_SF1[2,3,4]
+
+# 1975-1981
+DR_CF1 = {
+        '00': 'None',
+        # Physical/Mental Condition
+        '01': 'Drowsy, Sleepy, Asleep, Fatigued',
+        '02': 'Ill, Blackout',
+        '03': 'Depression',
+        '04': 'Reaction to Drugs - Medication',
+        '05': 'Other Drugs (Marijuana, Cocaine, etc.)',
+        '06': 'Inattentive (Talking, Eating, etc.)',
+        '07': 'Phyiscal Impairments',
+        '08': 'Died Prior to Crash',
+        # Miscellaneous Causes
+        '20': 'Leaving Vehicle Unattended with Engine Running/Leaving Vehicle Unattended in Roadway',
+        '21': 'Overloading or Improper Loading of Vehicle with Passengers or Cargo',
+        '22': 'Towing or Pushing Vehicle Improperly',
+        '23': 'Failing to Dim Lights or to Have Lights on When Required',
+        '24': 'Operating Witout Required Equipment',
+        '25': 'Creating Unlawful Noise or Using Equipment Prohibited by Law',
+        '26': 'Following Improperly',
+        '27': 'Improper or Erratic Lane Changing',
+        '28': 'Failure to Keep in Proper Lane or Running off Road',
+        '29': 'Illegal Driving on Road Shoulder, in Ditch or Sidewalk or on Median',
+        '30': 'Making Improper Entry to or Exit from Trafficway',
+        '31': 'Starting or Backing Improperly',
+        '32': 'Opening Vehicle Closure into Moving Traffic or Vehicle is in Motion',
+        '33': 'Passing Where Prohbited by Posted Signs, Pavement Markings, Hill or Curve, or School Bus Displaying Warning Not to Pass',
+        '34': 'Passing on Wrong Side',
+        '35': 'Passing with Insufficient Distance or Inadequate Visibility or Failing to Yield to Overtaking Vehicle',
+        '36': 'Operating the Vehicle in an Erratic, Reckless, Careless, or Negligent Manner',
+        '37': 'High-Speed Chase with Police in Pursuit',
+        '38': 'Failure to Yield to Right of Way',
+        '39': 'Failur to Obey Traffic Signs, Traffic Control Devices or Traffic Officers, Failure to Observe Safety Zone',
+        '40': 'Passing Throug or Around Barrier',
+        '41': 'Failur to Observe Warnings or Instructions on Vehicle Displaying Them',
+        '42': 'Failure to Signal Intentions',
+        '43': 'Giving Wrong Signal',
+        '44': 'Driving Too Fast for Conditions or in Excess of Posted Speed Limit',
+        '45': 'Driving Less Than Posted Maximum',
+        '46': 'Operatin at Erratic or Suddenly Changing Speeds',
+        '47': 'Making Right Turn from Left Turn-Lane; Making Left-TUrn from Right-Turn Lane',
+        '48': 'Making Improper Turn',
+        '49': 'Failure to Comply with Physical Restrictions of License',
+        '50': 'Driving Wrong Way on One-Way Trafficway',
+        '51': 'Driving on Wrong Side of Road',
+        '52': 'Operator Inexperience',
+        '53': 'Unfamiliar with Roadway',
+        '54': 'Stopping in Roadway',
+        '99': 'Unknown'
+        }
+
+# 1982-2009
+DR_CF1 = {
+        '00': 'None',
+        '01': 'Drowsy, Sleepy, Asleep, Fatigued',
+        '02': 'Ill, Passed Out/Blackout',
+        '03': 'Emotional (e.g., Depression, Angry, Disturbed)',
+        '04': 'Reaction to o Failure to Take Drugs/Medication',
+        '05': 'Under the Influence of Alcohol, Drugs, or Medication',
+        '06': 'Inattentive/Carless (Talking, Eating, Car Phones, etc.)',
+        '07': 'Restricted to Wheelchair',
+        '08': 'Paraplegic',
+        '09': 'Impaired Due to Previous Injury',
+        '10': 'Deaf',
+        '11': 'Other Physical Impairment',
+        '12': 'Mother of Dead Fetus/Mother of Infant Born Post Crash',
+        '13': 'Mentally Challenged',
+        '14': 'Failure to Take Drugs/Medication',
+        '15': 'Seat Back Not in Normal Position, Seat Back Reclined',
+        '16': 'Police or Law Enforcement Officer',
+        '17': 'Running off Road',
+        '18': 'Traveling on Prohibited Trafficways',
+        '19': 'Legally Driving on Suspended or Revoked License',
+        '20': 'Leaving Vehicle Unattended with Engine Running; Leaving Vehicle Unattended in Roadway',
+        '21': 'Overloading or Improper Loading of Vehicle with Passenger or Cargo',
+        '22': 'Towing or Pushing Vehicle Improperly',
+        '23': 'Failing to Dim Lights or to Have Lights on When Required',
+        '24': 'Operating Without Required Equipment',
+        '25': 'Creating Unlawful Noise or Using Equipment Prohibited by Law',
+        '26': 'Following Improperly',
+        '27': 'Improper or Erratic Lange Changing',
+        '28': 'Failure to Keep in Proper Lane or Running off Road',
+        '29': 'Illegal Driving on Road Shoulder, in Ditch, or Sidewalk, or on Median',
+        '30': 'Making Improper Entry to or Exit from Trafficway',
+        '31': 'Starting or Backing Improperly',
+        '32': 'Opning Vehicle Closure into Moving Traffic or Vehicle is in Motion',
+        '33': 'Passing Where Prohibited by Posted Signs, Pavement Markings, Hill or Curve, or School Bus Displaying Warning Not to Pass',
+        '34': 'Passing on Wrong Side',
+        '35': 'Passing with Insufficient Distance or Inadequate Visibility or Failing to Yield to Overtaking Vehicle',
+        '36': 'Operating the Vehicle in an Erratic, Reckless, Careless, or Negligent Manner or Operating at Erratic or Suddenly Changing Speeds',
+        '37': 'High-Speed Chase with Police in Pursuit',
+        '38': 'Failure to Yield to Right of Way',
+        '39': 'Failure to Obey Actual Traffic Signs, Traffic Control Devices or Traffic Officers, Failure to Observer Safety Zone Traffic Laws',
+        '40': 'Passing Through or Around Barrier',
+        '41': 'Failure to Observe Warnings or Instructions on Vehicle Displaying Them',
+        '42': 'Failure to Signal Intentions',
+        '43': 'Driving too Fast for Conditions',
+        '44': 'Driving too Fast for Conditions or in Excess of Posted Speed Limit',
+        '45': 'Driving Less Than Posted Maximum',
+        '46': 'Operaing at Erratic or Suddenly Changing Speeds',
+        '47': 'Making Right Turn from Left-Turn Lane or Making Left Turn from Right-Turn Lane',
+        '48': 'Making Improper Turn',
+        '49': 'Failure to Comply with Physical Restrictions of License',
+        '50': 'Driving Wrong Way on One-Way Trafficway',
+        '51': 'Driving on Wrong Side of Road (Intentionally or Unintentionally)',
+        '52': 'Operator Inexperience',
+        '53': 'Unfamiliar with Roadway',
+        '54': 'Stopping in Roadway (Vehicle Not Abandoned)',
+        '55': 'Underriding a Parked Truck',
+        '56': 'Improper Tire Pressure',
+        '57': 'Locked Wheel',
+        '58': 'Over Correcting',
+        '59': 'Getting Off/Out of or On/In to Moving Vehicle',
+        '60': 'Getting Off/Out of or On/In to Non-Moving Vehicle',
+        '61': 'Rain, Snow, Fog, Smoke, Sand, Dust',
+        '62': 'Reflected Glare, Bright Sunlight, Headlights',
+        '63': 'Curve, Hill, or Other Design Features',
+        '64': 'Building, Billboard, etc.',
+        '65': 'Trees, Crops, Vegetation',
+        '66': 'Vision Obscured by Motor Vehicle',
+        '67': 'Vision Obscured by Parked Vehicle',
+        '68': 'Splash or Spray of Passing Vehicle',
+        '69': 'Inadequate Defrost or Defog System',
+        '70': 'Inadequate Vehicle Lighting System',
+        '71': 'Obstructing Angles on Vehicle',
+        '72': 'Mirrors - Rear View',
+        '73': 'Mirrors - Other',
+        '74': 'Head Restraints',
+        '75': 'Broken or Improperly Cleaned Windshield',
+        '76': 'Other Obstruction',
+        '77': 'Severe Crosswind',
+        '78': 'Wind from Passing Truck',
+        '79': 'Slippery or Loose Surface',
+        '80': 'Tire Blow-Out or Flat',
+        '81': 'Debris or Objects in Road',
+        '82': 'Ruts, Holes, Bumps in Road',
+        '83': 'Live Animals in Road',
+        '84': 'Vehicle in Road',
+        '85': 'Phantom Vehicle',
+        '86': 'Pedestrian, Pedalcyclist, or Other Non-Motorist in Road (Skidding, Swerving or Sliding due to)',
+        '87': 'Ice, Water, Snow, Slush, Sand, Dirt, Oil, Wet Leaves on Road',
+        '88': 'Trailer Fishtailing or Swaying',
+        '90': 'Carrying Hazardous Cargo Improperly',
+        '90': 'Hit-and-Run Vehicle Driver',
+        '91': 'Non-Traffic Violation Charged (Manslaughter, Homicide or Other Assault Offense COmmitted Without Malice)',
+        '92': 'Other Non-Moving Traffic Violation',
+        '93': 'Cellular Telephone',
+        '94': 'Fax Machine',
+        '95': 'Computer/Fax Machines/Printers',
+        '96': 'On-Board Navigation System',
+        '97': 'Two-Way Radio',
+        '98': 'Head-Up Display',
+        '99': 'Unknown'
+        }
+
+# 2004-later
+DR_CF1['08'] = 'Road Rage/Aggressive Driving'
+# 1995-97
+DR_CF1['46'] = 'Not Used'
+# 1998-2008
+DR_CF1['46'] = 'Racing'
+# 2004-later
+DR_CF1['73'] = 'Driver Has Not Complied With Learners Permit or Intermediate Driver License Restructions'
+DR_CF1['74'] = 'Driver Has Not Complied With Learners Permit or Intermediate Driver License Restructions'
+# 2002-later
+DR_CF1['94'] = 'Cellula Telephone in Use in Vehicle'
+
+# 2010-later
+DR_CF1['06'] = 'Careless Driving'
+DR_CF1['37'] = 'Police Pursuing This Driver or Police Officer in Pursuit'
+DR_CF1['89'] = 'Driver has a Driving Record or Driver\'s License from More than One State'
