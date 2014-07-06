@@ -1,0 +1,131 @@
+V4,Number of Occupants,NUMOCCS,82
+V5,Unit Type,UNITTYPE,83
+V6 ,Hit and Run ,HIT_RUN ,84
+V8 ,Registered Vehicle Owner ,OWNER ,85
+V9 ,Vehicle Make ,MAKE ,86
+V10 ,Vehicle Model ,MODEL ,91
+V11 ,Body Type ,BODY_TYP ,93
+V12 ,Vehicle Model Year ,MOD_YEAR ,98
+V13 ,Vehicle Identification Number (VIN) ,VIN ,99
+V14 ,Vehicle Trailing ,TOW_VEH ,100
+V15 ,Jackknife ,J_KNIFE ,101
+V16 ,Motor Carrier Identification Number (MCID) ,MCARR_ID ,102
+V16A ,MCID Issuing Authority ,MCARR_I1 ,103
+V16B ,MCID Identification Number ,MCARR_I2 ,104
+V17 ,Gross Vehicle Weight Rating/GCWR ,GVWR ,105
+V18 ,Vehicle Configuration ,V_CONFIG ,106
+V19 ,Cargo Body Type ,CARGO_BT ,108
+V20A/HM1 ,Hazardous Material Involvement ,HAZ_INV ,110
+V20B/HM2 ,Hazardous Material Placard ,HAZ_PLAC ,110
+V20C/HM3 ,Hazardous Material Identification Number ,HAZ_ID ,110
+V20D/HM4 ,Hazardous Material Class Number ,HAZ_CNO ,111
+V20E/HM5 ,Release of Hazardous Material from the from the Cargo Compartment  ,HAZ_REL ,111
+V21 ,Bus Use ,BUS_USE ,112
+V22 ,Special Use ,SPEC_USE ,113
+V23 ,Emergency Use ,EMER_USE ,114
+V24 ,Travel Speed ,TRAV_SP ,115
+V25 ,Underride/Override ,UNDERIDE ,116
+V26 ,Rollover ,ROLLOVER ,117
+V27 ,Location of Rollover ,ROLINLOC ,118
+V28A ,Initial Contact Point ,IMPACT1 ,119
+V29 ,Extent of Damage ,DEFORMED ,120
+V30 ,Vehicle Removal ,TOWED ,121
+V32 ,Most Harmful Event ,M_HARM ,122
+V33 ,Related Factors- Vehicle Level ,VEH_SC1 ,126
+V33 ,Related Factors- Vehicle Level ,VEH_SC2 ,126
+V34 ,Fire Occurrence ,FIRE_EXP ,128
+V100 ,Make Model Combined ,MAK_MOD ,129
+V101 ,VIN Character 1 ,VIN_1 ,130
+V102 ,VIN Character 2 ,VIN_2 ,131
+V103 ,VIN Character 3 ,VIN_3 ,132
+V104 ,VIN Character 4 ,VIN_4 ,133
+V105 ,VIN Character 5 ,VIN_5 ,134
+V106 ,VIN Character 6 ,VIN_6 ,135
+V107 ,VIN Character 7 ,VIN_7 ,136
+V108 ,VIN Character 8 ,VIN_8 ,137
+V109 ,VIN Character 9 ,VIN_9 ,138
+V110 ,VIN Character 10 ,VIN_10 ,139
+V111 ,VIN Character 11 ,VIN_11 ,140
+V112 ,VIN Character 12 ,VIN_12 ,141
+V113 ,VIN Vehicle Type ,VINTYPE ,142
+V114 ,VIN Make ,VINMAKE ,143
+V115 ,VIN Model ,VINA_MOD ,144
+V116 ,VIN Body Type ,VIN_BT ,145
+V117 ,VIN Model Year ,VINMODYR ,149
+V118 ,Curb Weight ,VIN_WGT ,150
+V119 ,Wheelbase Short ,WHLBS_SH ,151
+V120 ,Wheelbase Long ,WHLBS_LG ,152
+V121 ,Fuel Code ,FUELCODE ,153
+V122 ,VIN Truck Series ,SER_TR ,154
+V123 ,Truck Weight Rating ,WGTCD_TR ,155
+V124 ,Motorcycle Engine Displacement (CC) ,MCYCL_DS ,156
+V125 ,VIN Length ,VIN_LNGT ,157
+V126 ,Original Tire Size ,TIRE_SZE ,158
+V127 ,Cubic Inch Displacement ,DISPLACE ,159
+V128 ,Number of Cylinders ,CYLINDER ,160
+V129 ,Carburetion ,CARBUR ,161
+V130 ,Number of Wheels/Drive Wheels ,WHLDRWHL ,162
+V131 ,Truck Ton Rating ,TON_RAT ,163
+V132 ,Truck Shipping Weight ,TRK_WT ,164
+V133 ,Truck Shipping Weight Variance ,TRKWTVAR ,165
+V134 ,Truck VIN Restraint Type ,VIN_REST ,166
+V135 ,Motorcycle Dry Weight ,MCYCL_WT ,167
+V136 ,Number of Motorcycle Engine Cycles ,MCYCL_CY ,168
+V150 ,Fatalities in Vehicle (Number) ,DEATHS ,169
+V151 ,Driver Drinking ,DR_DRINK ,170
+D4 ,Driver Presence ,DR_PRES ,171
+D6 ,Driver’s ZIP Code ,DR_ZIP ,172
+D7A ,Non-CDL License Type ,L_TYPE ,173
+D7B ,Non-CDL License Status ,L_STATUS ,173
+D8 ,Commercial Motor Vehicle License Status ,CDL_STAT ,175
+D9 ,Compliance with CDL Endorsements ,L_ENDORS ,176
+D10 ,License Compliance with Class of Vehicle ,L_COMPL ,177
+D11 ,Compliance with License Restrictions ,L_RESTRI ,178
+D12 ,Driver Height ,DR_HGT ,179
+D13 ,Driver Weight ,DR_WGT ,180
+D14 ,Previous Recorded Crashes ,PREV_ACC ,181
+D15 ,Previous Recorded Suspensions and Revocations,PREV_SUS ,182
+D16 ,Previous DWI Convictions ,PREV_DWI ,183
+D17 ,Previous Speeding Convictions ,PREV_SPD ,184
+D18 ,Previous Other Harmful Moving Violation Convictions,PREV_OTH ,185
+D19A ,Month ,FIRST_MO ,186
+D19B ,Year ,FIRST_YR ,187
+D20A ,Month ,LAST_MO ,188
+D20B ,Year ,LAST_YR ,189
+D22 ,Speed Related ,SPEEDREL ,190
+D24 ,Related Factors- Driver Level ,DR_SF1 ,191
+D24 ,Related Factors- Driver Level ,DR_SF2 ,191
+D24 ,Related Factors- Driver Level ,DR_SF3 ,191
+D24 ,Related Factors- Driver Level ,DR_SF4 ,191
+PC5 ,Trafficway Description ,VTRAFWAY ,197
+PC6 ,Total Lanes in Roadway ,VNUM_LAN ,198
+PC7 ,Speed Limit ,VSPD_LIM ,199
+PC8 ,Roadway Alignment ,VALIGN ,200
+PC9 ,Roadway Grade ,VPROFILE ,201
+PC10 ,Roadway Surface Type ,VPAVETYP ,202
+PC11 ,Roadway Surface Condition ,VSURCOND ,203
+PC12 ,Traffic Control Device ,VTRAFCON ,204
+PC13 ,Traffic Control Device Functioning ,VTCONT_F ,205
+PC17 ,Pre-Event Movement (Prior To Recognition of Critical Event),P_CRASH1 ,206
+PC19 ,Critical Event- Precrash ,P_CRASH2 ,207
+PC20 ,Attempted Avoidance Maneuver ,P_CRASH3 ,209
+PC21 ,Pre-Impact Stability ,PCRASH4 ,210
+PC22 ,Pre-Impact Location ,PCRASH5 ,211
+PC23 ,Crash Type ,ACC_TYPE ,212
+,Hazardous Material Involvement/Placard (discontinued),HAZ_CARG ,215
+,Sequence of Events (discontinued) ,SEQ1 ,216
+,Sequence of Events (discontinued) ,SEQ2 ,216
+,Sequence of Events (discontinued) ,SEQ3 ,216
+,Sequence of Events (discontinued) ,SEQ4 ,216
+,Sequence of Events (discontinued) ,SEQ5 ,216
+,Sequence of Events (discontinued) ,SEQ6 ,216
+,Most Damaged Area (discontinued) ,IMPACT2 ,218
+,Vehicle Maneuver (discontinued) ,VEH_MAN ,219
+,Vehicle Role (discontinued) ,IMPACTS ,220
+,Axle (discontinued) ,AXLES ,221
+,Motorcycle Type (discontinued) ,MCYCL_TY ,222
+,Driver Training (discontinued) ,DR_TRAIN ,226
+,Crash Avoidance Maneuver (discontinued) ,AVOID ,227
+,Driver’s Vision Obscured by (discontinued) ,D_VISION1 ,228
+,Driver’s Vision Obscured by (discontinued) ,D_VISION2 ,228
+,Driver’s Vision Obscured by (discontinued) ,D_VISION3 ,228
